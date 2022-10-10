@@ -20,6 +20,7 @@ fun <T : Comparable<T>> MutableList<T>.selectionSort(){
     }
 }
 
+
 fun <T : Comparable<T>> List<T>.selectionSort() : List<T>{
     return this.toMutableList()
         .also{ it.selectionSort() }
