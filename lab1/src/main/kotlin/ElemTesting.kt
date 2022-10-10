@@ -10,16 +10,14 @@ fun elemTesting(){
         println("Choose what do you want to do:\n" +
                 "\t1. Sort an array\n" +
                 "\t2. Binary search\n" +
-                "\t3. Test...loading.\n" +
-                "\t4. Exit\n")
+                "\t3. Exit\n")
 
         var choose = readln().toInt()
 
         when(choose){
             1 -> ArraySortCheck()
             2 -> BinarySearchCheck()
-            3 -> println("in progress....")
-            4 -> break
+            3 -> break
         }
     }
 }
