@@ -7,7 +7,6 @@ import kotlin.system.measureTimeMillis
 fun elemTesting(){
     println("Enter a array in one line:")
     val arr = inputList()
-
     println("Your array is: ")
     println(arr)
 
@@ -19,12 +18,8 @@ fun elemTesting(){
 }
 
 fun inputList() : MutableList<Int>{
-    val result = mutableListOf<Int>()
     val mlist = readLine()!!.split(" ").map{it.toInt()}
-
-    for (e in mlist){
-        result.add(e)
-    }
+    val result = mlist.toMutableList()
 
     return result
 }
